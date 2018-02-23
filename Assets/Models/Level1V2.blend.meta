@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 15035745a9d93c648a8a18bb325637f3
+timeCreated: 1518128817
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube
+    100004: Cube_001
+    100006: Test_1_Bridge
+    100008: Test_1_Bridge_001
+    100010: Test_1_Bridge_002
+    100012: Test_1_Bridge_003
+    100014: Test_1_Bridge_004
+    100016: Test_1_Bridge_005
+    100018: Test_1_Bridge_006
+    100020: Test_1_Bridge_007
+    100022: Test_1_Bridge_008
+    100024: Test_1_Bridge_009
+    100026: Test_1_Bridge_11
+    100028: Test_1_Bridge_12
+    100030: Cube_002
+    100032: Level1
+    100034: Stairs_AfterBridg
+    100036: Stairs_StartRoom
+    100038: Level1_DoorLeft
+    100040: Level1_DoorRight
+    400000: //RootNode
+    400002: Cube
+    400004: Cube_001
+    400006: Test_1_Bridge
+    400008: Test_1_Bridge_001
+    400010: Test_1_Bridge_002
+    400012: Test_1_Bridge_003
+    400014: Test_1_Bridge_004
+    400016: Test_1_Bridge_005
+    400018: Test_1_Bridge_006
+    400020: Test_1_Bridge_007
+    400022: Test_1_Bridge_008
+    400024: Test_1_Bridge_009
+    400026: Test_1_Bridge_11
+    400028: Test_1_Bridge_12
+    400030: Cube_002
+    400032: Level1
+    400034: Stairs_AfterBridg
+    400036: Stairs_StartRoom
+    400038: Level1_DoorLeft
+    400040: Level1_DoorRight
+    2100000: Material
+    2100002: Edges
+    2100004: Cealing
+    2100006: Floor
+    2100008: Walls
+    2300000: //RootNode
+    2300002: Cube
+    2300004: Cube_001
+    2300006: Test_1_Bridge
+    2300008: Test_1_Bridge_001
+    2300010: Test_1_Bridge_002
+    2300012: Test_1_Bridge_003
+    2300014: Test_1_Bridge_004
+    2300016: Test_1_Bridge_005
+    2300018: Test_1_Bridge_006
+    2300020: Test_1_Bridge_007
+    2300022: Test_1_Bridge_008
+    2300024: Test_1_Bridge_009
+    2300026: Test_1_Bridge_11
+    2300028: Test_1_Bridge_12
+    2300030: Cube_002
+    2300032: Level1
+    2300034: Stairs_AfterBridg
+    2300036: Stairs_StartRoom
+    2300038: Level1_DoorLeft
+    2300040: Level1_DoorRight
+    3300000: //RootNode
+    3300002: Cube
+    3300004: Cube_001
+    3300006: Test_1_Bridge
+    3300008: Test_1_Bridge_001
+    3300010: Test_1_Bridge_002
+    3300012: Test_1_Bridge_003
+    3300014: Test_1_Bridge_004
+    3300016: Test_1_Bridge_005
+    3300018: Test_1_Bridge_006
+    3300020: Test_1_Bridge_007
+    3300022: Test_1_Bridge_008
+    3300024: Test_1_Bridge_009
+    3300026: Test_1_Bridge_11
+    3300028: Test_1_Bridge_12
+    3300030: Cube_002
+    3300032: Level1
+    3300034: Stairs_AfterBridg
+    3300036: Stairs_StartRoom
+    3300038: Level1_DoorLeft
+    3300040: Level1_DoorRight
+    4300000: Cube
+    4300002: Cube_001
+    4300004: Test_1_Bridge
+    4300006: Test_1_Bridge_001
+    4300008: Test_1_Bridge_002
+    4300010: Test_1_Bridge_003
+    4300012: Test_1_Bridge_004
+    4300014: Test_1_Bridge_005
+    4300016: Test_1_Bridge_006
+    4300018: Test_1_Bridge_007
+    4300020: Test_1_Bridge_008
+    4300022: Test_1_Bridge_009
+    4300024: Test_1_Bridge_11
+    4300026: Test_1_Bridge_12
+    4300028: Cube_002
+    4300030: Stairs_AfterBridg
+    4300032: Stairs_StartRoom
+    4300034: Level1
+    4300036: Level1_DoorLeft
+    4300038: Level1_DoorRight
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bridge
+    second: {fileID: 2100000, guid: 37d532eaaee73d24aa11f6c4e019885b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cealing
+    second: {fileID: 2100000, guid: fa0d712df456f2443aa76f0b2a735f8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Doors
+    second: {fileID: 2100000, guid: 3faa5b77a12b4fb43a0889838bfec7d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Edges
+    second: {fileID: 2100000, guid: f33100885a4995745bbd8073ec75f4e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 3e5affc0857fee846886d96991824e6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stairs
+    second: {fileID: 2100000, guid: 5b247feca71cf304d8737d1c0a468011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls
+    second: {fileID: 2100000, guid: 6c61ad502cfe35549911c9ee44664509, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
