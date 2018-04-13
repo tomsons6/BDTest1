@@ -25,9 +25,9 @@ public class Clone : MonoBehaviour
         {
             OnQdown();
         }
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("f"))
         {
-            OnEdown();
+            OnFdown();
         }
         if (Input.GetKeyDown("r"))
         {
@@ -44,26 +44,47 @@ public class Clone : MonoBehaviour
         float spawnDistance = 5;
 
         Vector3 spawnPos = playerPos + playerDirection * spawnDistance;
-        count = count + 1;
-        Debug.Log(count.ToString());
-        Vector3 pos = gameObject.transform.position;
+        Ray Check = new Ray(spawnPos, Vector3.down);
+        RaycastHit hit;
+        if (Physics.Raycast(Check, out hit, 25))
+        {
+            if(hit.collider.gameObject.layer == 9)
+            {
+                Debug.Log("Out of Map");
+            }
+            else
+            {
+                if(count >= 1)
+                {
+                    Debug.Log("too many clones");
+                }
+                else
+                {
+                count = count + 1;
+                Debug.Log(count.ToString());
+                Vector3 pos = gameObject.transform.position;
 
-        if (count == 1)
-        {
-            gameObject.GetComponentInChildren<Camera>().rect = new Rect(-4.5f, 0f, 5f, 5f);
-            Instantiate(clone1T, spawnPos, playerRotation);
-            clone1T.GetComponentInChildren<Camera>().rect = new Rect(0.5f, 0f, 5f, 5f);
+                if (count == 1)
+                {
+                    gameObject.GetComponentInChildren<Camera>().rect = new Rect(-4.5f, 0f, 5f, 5f);
+                    Instantiate(clone1T, spawnPos, playerRotation);
+                    clone1T.GetComponentInChildren<Camera>().rect = new Rect(0.5f, 0f, 5f, 5f);
+                }
+                if (count == 2)
+                {
+                    gameObject.GetComponentInChildren<Camera>().rect = new Rect(-4.5f, .5f, 5f, 5f);
+                    clone1T.GetComponentInChildren<Camera>().rect = new Rect(.5f, .5f, 5f, 5f);
+                    Instantiate(clone2T, pos + new Vector3(0, 0, -5), Quaternion.identity);
+                    clone2T.GetComponentInChildren<Camera>().rect = new Rect(-4.5f, -4.5f, 5f, 5f);
+                    Instantiate(clone3T, pos + new Vector3(5, 0, -5), Quaternion.identity);
+                    clone3T.GetComponentInChildren<Camera>().rect = new Rect(.5f, -4.5f, 5f, 5f);
+                }
+                }
+            }
         }
-        if (count == 2)
-        {
-            gameObject.GetComponentInChildren<Camera>().rect = new Rect(-4.5f, .5f, 5f, 5f);
-            clone1T.GetComponentInChildren<Camera>().rect = new Rect(.5f, .5f, 5f, 5f);
-            Instantiate(clone2T, pos + new Vector3(0, 0, -5), Quaternion.identity);
-            clone2T.GetComponentInChildren<Camera>().rect = new Rect(-4.5f, -4.5f, 5f, 5f);
-            Instantiate(clone3T, pos + new Vector3(5, 0, -5), Quaternion.identity);
-            clone3T.GetComponentInChildren<Camera>().rect = new Rect(.5f, -4.5f, 5f, 5f);
-        }
+
     }
+    //Clone Destroy
     void OnRdown()
     {
         characterint2 = 1;
@@ -85,7 +106,7 @@ public class Clone : MonoBehaviour
         }
     }
     //switching between clones
-    void OnEdown()
+    void OnFdown()
     {
         //Debug.Log(characterint4);
         characterint4++;
@@ -183,4 +204,9 @@ public class Clone : MonoBehaviour
             }
         }
     }
+    void CheckSpawnPoint()
+    {
+        
+    }
+
 }

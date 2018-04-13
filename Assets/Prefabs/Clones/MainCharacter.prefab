@@ -227,12 +227,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3cc092c625518c41bd01e44773e7005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clone1T: {fileID: 4653324445548070, guid: 3f55a6fd9e02e634b8beb0a7f78216a7, type: 2}
+  clone1T: {fileID: 4547999005576696, guid: 2b6e9788843229942b304f1c50a2a458, type: 2}
   clone2T: {fileID: 4187081958114352, guid: 1c68755ee3b159946ba45ad87fa5b6d4, type: 2}
   clone3T: {fileID: 4133483789299700, guid: ca4c4919525993c4fba05ad55c0635bf, type: 2}
-  clone1: {fileID: 0}
-  clone2: {fileID: 0}
-  clone3: {fileID: 0}
 --- !u!114 &114510266079292796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,6 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorLeft: {fileID: 0}
   DoorRight: {fileID: 0}
+  BtnUp: {fileID: 0}
 --- !u!114 &114587715264799564
 MonoBehaviour:
   m_ObjectHideFlags: 1

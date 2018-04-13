@@ -12,6 +12,8 @@ TagManager:
   - Clone2
   - Clone3
   - Main
+  - KeyCard
+  - MainMenu
   layers:
   - Default
   - TransparentFX
@@ -21,9 +23,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - PickableObjectes
+  - OutOfMap
+  - LabirynthLights
   - 
   - 
   - 

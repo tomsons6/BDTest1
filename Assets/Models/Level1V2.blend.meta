@@ -26,6 +26,9 @@ ModelImporter:
     100036: Stairs_StartRoom
     100038: Level1_DoorLeft
     100040: Level1_DoorRight
+    100042: Level1_KeyCard_DoorLeft
+    100044: Level1_KeyCard_DoorRight
+    100046: UnderConstruction
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -47,6 +50,9 @@ ModelImporter:
     400036: Stairs_StartRoom
     400038: Level1_DoorLeft
     400040: Level1_DoorRight
+    400042: Level1_KeyCard_DoorLeft
+    400044: Level1_KeyCard_DoorRight
+    400046: UnderConstruction
     2100000: Material
     2100002: Edges
     2100004: Cealing
@@ -73,6 +79,9 @@ ModelImporter:
     2300036: Stairs_StartRoom
     2300038: Level1_DoorLeft
     2300040: Level1_DoorRight
+    2300042: Level1_KeyCard_DoorLeft
+    2300044: Level1_KeyCard_DoorRight
+    2300046: UnderConstruction
     3300000: //RootNode
     3300002: Cube
     3300004: Cube_001
@@ -94,6 +103,9 @@ ModelImporter:
     3300036: Stairs_StartRoom
     3300038: Level1_DoorLeft
     3300040: Level1_DoorRight
+    3300042: Level1_KeyCard_DoorLeft
+    3300044: Level1_KeyCard_DoorRight
+    3300046: UnderConstruction
     4300000: Cube
     4300002: Cube_001
     4300004: Test_1_Bridge
@@ -114,6 +126,9 @@ ModelImporter:
     4300034: Level1
     4300036: Level1_DoorLeft
     4300038: Level1_DoorRight
+    4300040: Level1_KeyCard_DoorLeft
+    4300042: Level1_KeyCard_DoorRight
+    4300044: UnderConstruction
     7400000: Default Take
     9500000: //RootNode
   externalObjects:
@@ -140,13 +155,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Edges_NotEmmision
+    second: {fileID: 2100000, guid: 3cd3a87f738901743aab0203a082ddee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Floor
     second: {fileID: 2100000, guid: 3e5affc0857fee846886d96991824e6d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Labyrinth
+    second: {fileID: 2100000, guid: 2fe2aaadcadba1f4e8067e2520c7d586, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: ede749937c72f214f9673f59f1156c9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Stairs
     second: {fileID: 2100000, guid: 5b247feca71cf304d8737d1c0a468011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stand
+    second: {fileID: 2100000, guid: 6014d7829f17184468160947be377dd3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -189,7 +224,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

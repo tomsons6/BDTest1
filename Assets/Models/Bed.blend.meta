@@ -31,7 +31,27 @@ ModelImporter:
     4300006: sega
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gulta
+    second: {fileID: 2100000, guid: f6d9b00a7f7b81143b03054a290edf20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillow
+    second: {fileID: 2100000, guid: 8a2b292c85599834e984ccc173296d04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sega
+    second: {fileID: 2100000, guid: 096eb81465d8d124bbc373e1eb6ca367, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kajas
+    second: {fileID: 2100000, guid: 71894103997373e489feaa08cdb2a7fc, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -69,7 +89,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

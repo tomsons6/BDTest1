@@ -5,26 +5,27 @@ using UnityEngine;
 public class StartDoorOpen : MonoBehaviour
 {
 
-    public GameObject DoorLeft, DoorRight;
+    public GameObject DoorLeft, DoorRight, BtnUp;
     private bool isWithinOpenZone = false;
     private bool isDoorOpeningInProgress = false;
     private float doorOpenTimeInSeconds = 2f;
 
     void Start()
     {
-
+        BtnUp = GameObject.FindGameObjectWithTag("BtnUp");
+      
     }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
-        {
+        {         
             TriggerOpenDoorInput();
         }
     }
     private void TriggerOpenDoorInput()
     {
-        if (isWithinOpenZone && !isDoorOpeningInProgress)
+        if (isWithinOpenZone && !isDoorOpeningInProgress && BtnUp.GetComponent<BtnUpPush>().isWithinOpenZoneBtnUp)
         {
             StartCoroutine(OpenDoorRoutine());
         }

@@ -15,7 +15,22 @@ ModelImporter:
     4300000: Cube
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinet_Frame
+    second: {fileID: 2100000, guid: e292419a861953340b746a9d752063b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinet_Handle
+    second: {fileID: 2100000, guid: e741eb4c4bce54e4580e65e70df6cf15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinet_drawer
+    second: {fileID: 2100000, guid: 92faf4da6fd04b54dab649d442e7f5cc, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -53,7 +68,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

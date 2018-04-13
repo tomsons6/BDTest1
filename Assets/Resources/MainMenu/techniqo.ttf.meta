@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 71eb1ea0b0bcc3047b173cc13f61be35
+timeCreated: 1520433571
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Technique OL BRK
+  fontNames:
+  - Technique OL BRK
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
