@@ -5,47 +5,82 @@ using UnityEngine;
 public class StartDoorOpen : MonoBehaviour
 {
 
-    public GameObject DoorLeft, DoorRight, BtnUp;
-    private bool isWithinOpenZone = false;
-    private bool isDoorOpeningInProgress = false;
+    public GameObject DoorLeft, DoorRight, BtnUp, BtnDown, UpBtn,DownBtn;
     private float doorOpenTimeInSeconds = 2f;
+    private float btnpushSec = .2f;
 
     void Start()
     {
-        BtnUp = GameObject.FindGameObjectWithTag("BtnUp");
-      
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {         
             TriggerOpenDoorInput();
         }
     }
     private void TriggerOpenDoorInput()
     {
-        if (isWithinOpenZone && !isDoorOpeningInProgress && BtnUp.GetComponent<BtnUpPush>().isWithinOpenZoneBtnUp)
+        if (BtnDown.GetComponent<BtnDownPush>().isWithinOpenZoneBtnDown)
+        {
+            StartCoroutine(BtnDownPush());
+        }
+        if (BtnUp.GetComponent<BtnUpPush>().isWithinOpenZoneBtnUp)
+        {
+            StartCoroutine(BtnUpPush());
+        }
+        if (BtnUp.GetComponent<BtnUpPush>().isWithinOpenZoneBtnUp && BtnDown.GetComponent<BtnDownPush>().isWithinOpenZoneBtnDown)
         {
             StartCoroutine(OpenDoorRoutine());
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private IEnumerator BtnDownPush()
     {
-        //validate if Player or other entity that can open door
-        if (other.gameObject.tag == "BtnDown")
-            isWithinOpenZone = true;
+        Vector3 BtnStart = new Vector3(0f, DownBtn.transform.localPosition.y, DownBtn.transform.localPosition.z);
+        Vector3 BtnEnd = new Vector3( -0.0046f, DownBtn.transform.localPosition.y, DownBtn.transform.localPosition.z);
+        float t = 0f;
+        float t1 = 0f;
+        while (t <= 1f)
+        {
+            t += Time.deltaTime / btnpushSec;
+            Vector3 CurrentPush = Vector3.Lerp(BtnStart, BtnEnd,t);
+            DownBtn.GetComponentInChildren<Transform>().localPosition = CurrentPush;
+            yield return null;
+        }
+        yield return new WaitForSeconds(.1f);
+        while (t1 <= 1f)
+        {
+            t1 += Time.deltaTime / btnpushSec;
+            Vector3 CurrentPush = Vector3.Lerp(BtnEnd, BtnStart, t);
+            DownBtn.GetComponentInChildren<Transform>().localPosition = CurrentPush;
+            yield return null;
+        }
     }
-
-    private void OnTriggerExit(Collider other)
+    private IEnumerator BtnUpPush()
     {
-        //validate if Player or other entity that can open door
-        isWithinOpenZone = false;
+        Vector3 BtnStart = new Vector3(0, UpBtn.transform.localPosition.y, UpBtn.transform.localPosition.z);
+        Vector3 BtnEnd = new Vector3( -0.0046f, UpBtn.transform.localPosition.y, UpBtn.transform.localPosition.z);
+        float t = 0f;
+        float t1 = 0f;
+        while (t <= 1f)
+        {
+            t += Time.deltaTime / btnpushSec;
+            Vector3 CurrentPush = Vector3.Lerp(BtnStart, BtnEnd, t);
+            UpBtn.GetComponentInChildren<Transform>().localPosition = CurrentPush;
+            yield return null;
+        }
+        yield return new WaitForSeconds(.1f);
+        while (t1 <= 1f)
+        {
+            t1 += Time.deltaTime / btnpushSec;
+            Vector3 CurrentPush = Vector3.Lerp(BtnEnd, BtnStart, t);
+            UpBtn.GetComponentInChildren<Transform>().localPosition = CurrentPush;
+            yield return null;
+        }
     }
     private IEnumerator OpenDoorRoutine()
     {
-        isDoorOpeningInProgress = true;
-
         Vector3 fromLeft = new Vector3(DoorLeft.transform.position.x, DoorLeft.transform.position.y, DoorLeft.transform.position.z);
         Vector3 toLeft = new Vector3(DoorLeft.transform.position.x, DoorLeft.transform.position.y, -1.65f);
         Vector3 fromRight = new Vector3(DoorRight.transform.position.x, DoorRight.transform.position.y, DoorRight.transform.position.z);
@@ -66,7 +101,5 @@ public class StartDoorOpen : MonoBehaviour
 
             yield return null;
         }
-
-        isDoorOpeningInProgress = false;
     }
 }

@@ -18,7 +18,7 @@ public class BtnUpPush : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         //validate if Player or other entity that can open door
-        if (other.gameObject.tag == "Clone1")
+        if (other.gameObject.tag == "Clone1" || other.gameObject.tag =="Main")
             isWithinOpenZoneBtnUp = true;
     }
     private void OnTriggerExit(Collider other)

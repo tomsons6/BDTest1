@@ -95,6 +95,7 @@ public class Clone : MonoBehaviour
             Destroy(clone1);
             gameObject.GetComponentInChildren<Camera>().rect = new Rect(0f, 0f, 5f, 5f);
             count = 0;
+            OnFdown();
         }
         if (count == 2)
         {

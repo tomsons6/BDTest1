@@ -20,7 +20,7 @@ public class MainMenuController : MonoBehaviour {
         
         MainMenu = Canvas.FindObjectOfType<Canvas>();
         Debug.Log(MainMenu);
-        MainMenu.GetComponent<Image>().sprite = Resources.Load<Sprite>("MainMenu/InstructionScreen");
+        MainMenu.GetComponent<Image>().sprite = Resources.Load<Sprite>("MainMenu/InstructionScreen 1");
         MainMenu.transform.GetChild(0).gameObject.SetActive(false);
         MainMenu.transform.GetChild(1).gameObject.SetActive(false);
         start = true;
