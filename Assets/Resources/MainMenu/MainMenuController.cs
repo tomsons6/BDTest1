@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour {
     Canvas MainMenu;
-    public bool start = false;
-    // Use this for initialization    
+    public bool start = false;    
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && start == true)

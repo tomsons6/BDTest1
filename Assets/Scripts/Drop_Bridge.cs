@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Drop_Bridge : MonoBehaviour {
      GameObject[] bridge;
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		
 	}

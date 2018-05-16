@@ -29,6 +29,20 @@ ModelImporter:
     100042: Level1_KeyCard_DoorLeft
     100044: Level1_KeyCard_DoorRight
     100046: UnderConstruction
+    100048: Level1_BridgeHallway
+    100050: Level1_BridgeRoom
+    100052: Level1_JumpCorridor
+    100054: Level1_KeyCardRoom
+    100056: Level1_Labyriinth
+    100058: Level1_LabyrinthHallways
+    100060: Level1_LabyrinthObserve
+    100062: Level1_ObserationRoom
+    100064: Level1_Platform
+    100066: Level1_PlatformHallway
+    100068: Level1_StartHallways
+    100070: Level1_StartRoom
+    100072: Level1_StartRoomLeft
+    100074: Level1_StartRoomRight
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -53,6 +67,20 @@ ModelImporter:
     400042: Level1_KeyCard_DoorLeft
     400044: Level1_KeyCard_DoorRight
     400046: UnderConstruction
+    400048: Level1_BridgeHallway
+    400050: Level1_BridgeRoom
+    400052: Level1_JumpCorridor
+    400054: Level1_KeyCardRoom
+    400056: Level1_Labyriinth
+    400058: Level1_LabyrinthHallways
+    400060: Level1_LabyrinthObserve
+    400062: Level1_ObserationRoom
+    400064: Level1_Platform
+    400066: Level1_PlatformHallway
+    400068: Level1_StartHallways
+    400070: Level1_StartRoom
+    400072: Level1_StartRoomLeft
+    400074: Level1_StartRoomRight
     2100000: Material
     2100002: Edges
     2100004: Cealing
@@ -82,6 +110,20 @@ ModelImporter:
     2300042: Level1_KeyCard_DoorLeft
     2300044: Level1_KeyCard_DoorRight
     2300046: UnderConstruction
+    2300048: Level1_BridgeHallway
+    2300050: Level1_BridgeRoom
+    2300052: Level1_JumpCorridor
+    2300054: Level1_KeyCardRoom
+    2300056: Level1_Labyriinth
+    2300058: Level1_LabyrinthHallways
+    2300060: Level1_LabyrinthObserve
+    2300062: Level1_ObserationRoom
+    2300064: Level1_Platform
+    2300066: Level1_PlatformHallway
+    2300068: Level1_StartHallways
+    2300070: Level1_StartRoom
+    2300072: Level1_StartRoomLeft
+    2300074: Level1_StartRoomRight
     3300000: //RootNode
     3300002: Cube
     3300004: Cube_001
@@ -106,6 +148,20 @@ ModelImporter:
     3300042: Level1_KeyCard_DoorLeft
     3300044: Level1_KeyCard_DoorRight
     3300046: UnderConstruction
+    3300048: Level1_BridgeHallway
+    3300050: Level1_BridgeRoom
+    3300052: Level1_JumpCorridor
+    3300054: Level1_KeyCardRoom
+    3300056: Level1_Labyriinth
+    3300058: Level1_LabyrinthHallways
+    3300060: Level1_LabyrinthObserve
+    3300062: Level1_ObserationRoom
+    3300064: Level1_Platform
+    3300066: Level1_PlatformHallway
+    3300068: Level1_StartHallways
+    3300070: Level1_StartRoom
+    3300072: Level1_StartRoomLeft
+    3300074: Level1_StartRoomRight
     4300000: Cube
     4300002: Cube_001
     4300004: Test_1_Bridge
@@ -129,6 +185,20 @@ ModelImporter:
     4300040: Level1_KeyCard_DoorLeft
     4300042: Level1_KeyCard_DoorRight
     4300044: UnderConstruction
+    4300046: Level1_StartRoomRight
+    4300048: Level1_StartRoomLeft
+    4300050: Level1_StartRoom
+    4300052: Level1_StartHallways
+    4300054: Level1_PlatformHallway
+    4300056: Level1_Platform
+    4300058: Level1_ObserationRoom
+    4300060: Level1_LabyrinthObserve
+    4300062: Level1_LabyrinthHallways
+    4300064: Level1_Labyriinth
+    4300066: Level1_KeyCardRoom
+    4300068: Level1_JumpCorridor
+    4300070: Level1_BridgeRoom
+    4300072: Level1_BridgeHallway
     7400000: Default Take
     9500000: //RootNode
   externalObjects:
@@ -167,6 +237,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Labyrinth
     second: {fileID: 2100000, guid: 2fe2aaadcadba1f4e8067e2520c7d586, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LevelTexture
+    second: {fileID: 2100000, guid: 826fbd12507707d49b0b55a61b8e9f03, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

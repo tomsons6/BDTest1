@@ -128,9 +128,13 @@ public class Clone : MonoBehaviour
                 case 1:
                     gameObject.GetComponent<FirstPersonController>().enabled = true;
                     clone1.GetComponent<FirstPersonController>().enabled = false;
+                    
 
                     transform.gameObject.GetComponentInChildren<Camera>().tag = "MainCamera";
                     clone1.GetComponentInChildren<Camera>().tag = "Untagged";
+
+                    gameObject.GetComponent<AnimationController>().enabled = true;
+                    clone1.GetComponent<AnimationController>().enabled = false;
                     break;
                 case 2:
                     gameObject.GetComponent<FirstPersonController>().enabled = false;
@@ -138,6 +142,9 @@ public class Clone : MonoBehaviour
 
                     gameObject.GetComponentInChildren<Camera>().tag = "Untagged";
                     clone1.GetComponentInChildren<Camera>().tag = "MainCamera";
+
+                    gameObject.GetComponent<AnimationController>().enabled = false;
+                    clone1.GetComponent<AnimationController>().enabled = true;
                     break;
             }
             if (characterint2 == 2)
@@ -205,9 +212,4 @@ public class Clone : MonoBehaviour
             }
         }
     }
-    void CheckSpawnPoint()
-    {
-        
-    }
-
 }

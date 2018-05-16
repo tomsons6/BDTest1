@@ -7,6 +7,7 @@ public class AnimationController : MonoBehaviour {
     public Animator _animator;
 	// Use this for initialization
 	void Start () {
+        _animator = gameObject.GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
