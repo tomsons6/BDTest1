@@ -85,7 +85,7 @@ public class Clone : MonoBehaviour
 
     }
     //Clone Destroy
-    void OnRdown()
+    public void OnRdown()
     {
         characterint2 = 1;
         characterint4 = 1;
@@ -119,6 +119,7 @@ public class Clone : MonoBehaviour
             characterint4 = 1;
             gameObject.GetComponent<FirstPersonController>().enabled = true;
             gameObject.GetComponentInChildren<Camera>().enabled = true;
+            transform.gameObject.GetComponentInChildren<Camera>().tag = "MainCamera";
         }
         //count = 1 -> 1 clone is spawned
         if (count == 1)

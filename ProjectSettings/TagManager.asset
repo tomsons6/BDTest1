@@ -14,6 +14,8 @@ TagManager:
   - Main
   - KeyCard
   - MainMenu
+  - KeyCardPlatform
+  - Laser
   layers:
   - Default
   - TransparentFX
@@ -27,7 +29,7 @@ TagManager:
   - OutOfMap
   - LabirynthLights
   - Character
-  - 
+  - Clone1
   - 
   - 
   - 

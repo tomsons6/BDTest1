@@ -8,13 +8,13 @@ public class Drop_Bridge : MonoBehaviour {
 	void Update () {
 		
 	}
-    void OnControllerColliderHit(ControllerColliderHit c)
+    void OnTriggerEnter(Collider other)
     {
         bridge = GameObject.FindGameObjectsWithTag("Bridge");
-        if (c.gameObject.tag == "Drop_Bridge")
+        if (other.gameObject.tag == "Main" || other.gameObject.tag == "Clone1")
         {
             Debug.Log("kolizija");
-            Destroy(c.gameObject);
+            Destroy(this);
             int i = 0;
             do
             {
