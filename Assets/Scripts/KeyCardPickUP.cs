@@ -52,8 +52,8 @@ public class KeyCardPickUP : MonoBehaviour {
         LaserLine.AddComponent<LineRenderer>();
         LineRenderer lr = LaserLine.GetComponent<LineRenderer>();
         lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
-        lr.SetColors(color, color);
-        lr.SetWidth(0.1f, 0.1f);
+        lr.startColor = Color.red;
+        lr.startWidth = 1f;
         lr.SetPosition(0, LaserStartP) ;
         lr.SetPosition(1, LaserEndP);
         GameObject.Destroy(LaserLine, duration);;

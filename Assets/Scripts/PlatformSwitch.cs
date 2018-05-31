@@ -22,7 +22,6 @@ public class PlatformSwitch : MonoBehaviour {
             if(switchpulled == false)
             {
                 StartCoroutine(SwitchMove());
-                StartCoroutine(PlatfromMove());
             }
         }
 	}
@@ -52,15 +51,17 @@ public class PlatformSwitch : MonoBehaviour {
                 switche.transform.localRotation = currentposition;
                 yield return null;
             }
+            switchpulled = true;
         }
-        switchpulled = true;
+        yield return new WaitForSeconds(0.1f);
+        StartCoroutine(PlatfromMove());
     }
     IEnumerator PlatfromMove()
     {
         Vector3 platformstart = new Vector3(62f, 8f, platform.transform.position.z);
         Vector3 platformmiddown = new Vector3(46f, 8f, platform.transform.position.z);
         Vector3 platfrommidup = new Vector3(46f, 11.5f, platform.transform.position.z);
-        Vector3 platformEnd = new Vector3(62f, 8f, platform.transform.position.z);
+
         while(switchpulled == true) {
         float t = 0f;
         float t1 = 0f;
